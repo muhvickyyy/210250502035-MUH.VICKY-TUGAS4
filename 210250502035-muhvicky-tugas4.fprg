@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-24 08:41:46 PM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLU45TlVBQUZVOzIwMjItMDUtMjQ7MDY6NTM6MjggUE07MjUyOQ=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLU45TlVBQUZVOzIwMjItMDUtMjQ7MDg6NDE6NDYgUE07MTsyNjM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="crypto" type="Integer" array="False" size=""/>
+            <input variable="crypto"/>
+            <if expression="crypto &lt; 0">
+                <then>
+                    <output expression="&quot;FoxTIME&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="crypto &lt; 100">
+                        <then>
+                            <output expression="&quot;Forex&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="crypto &lt; 500">
+                                <then>
+                                    <output expression="&quot;OctaFX&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Binomo&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
